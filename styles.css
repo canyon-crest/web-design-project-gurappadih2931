@@ -1,1 +1,10 @@
+body{
+    background-color: azure;
+}
+p{
+    line-height: 1.75em;
+}
 
+img{
+    widt: 300px;
+}
