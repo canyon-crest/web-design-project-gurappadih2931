@@ -1,10 +1,16 @@
 body{
-    background-color: azure;
+    background-color: rgb(1, 17, 51);
+    color: white;
+    
 }
 p{
     line-height: 1.75em;
+    color: white;
 }
 
 img{
-    widt: 300px;
+    width: 300px;
+    border-radius: 10px;
+
 }
+
