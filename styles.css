@@ -1,18 +1,19 @@
 body{
-    background-color: rgb(13, 52, 124);
+    /*background-color: rgb(13, 52, 124);*/
     color: rgb(255, 255, 255);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    background: linear-gradient(to bottom right, blueviolet, rgb(72, 72, 200), rgb(132, 110, 230));
+    background-attachment: fixed;*/
 }
 #container{
-    width:800px;
-    margin: 20px auto;
+    width:1000px;
+    margin: 200px auto;
     background-color:5px double white;
     border-right: 5px double white;
-    padding: 10px 60px;
+    padding: 10px 50px;
 }
 h1{
-    background-color: rgb(#FFA500);
+    background-color: blueviolet;
     border: 3px solid black;
     border-radius: 10px;
     padding: 30px;
@@ -29,27 +30,32 @@ h3{
    border-left: 20px double #ffffff;
    padding-left: 15px;
    border-radius: 20px;
-   border-bottom: 2px solid rgb(219, 168, 96) ;
+   border-bottom: 2px solid blueviolet ;
    width: 150px;
-   background-color: rgb(219, 168, 96)
+   background-color: blueviolet;
 
 }
 p{
     line-height: 1.75em;
     color: rgb(255, 255, 255);
-    width: 100%;
-    padding: 2px;
+    width: 95%;
+    padding: 20px;
     
     
 }
 
 img{
-    width: 300px;
+    width: 250px;
     border-radius: 10px;
-    border: 5px solid rgb(219, 168, 96);
+    border: 5px solid blueviolet;
     /*width: 100%*/
     margin-right: 20px;
     float:left;
+}
+img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 10px;
+    transition: all 0.5s ease-in-out;
 }
 a:link{
     color:blueviolet;
@@ -74,4 +80,51 @@ a:active{
     padding: 2px;
     border-radius: 3px;
 
+}
+#sidebar{
+    background-color: black;
+    width: 200px;
+    line-height: 2.25em;
+    border: 2px solid white;
+    float:right;
+    padding: 5px;
+    margin: 20px;
+    margin-top: 70px;
+}
+#sidebar h3{
+    border:none;
+    text-align: center;
+    padding: 5px;
+    margin: 5px auto;
+    margin-top: 1px;
+}
+.stripe {
+  height: 100px;
+  background: linear-gradient(to right, red 85%, blue);
+}
+@media (max-width:1200px){
+    #container{
+        /*background-color: rgb(13, 52, 124);*/
+        width: 800px;
+    }
+}
+
+@media (max-width:900px){
+    #container{
+        /*background-color: rgb(13, 52, 124);*/
+        width:100%;
+    }
+    body,p,#container{
+        margin:0;
+        border:none;
+        padding:0;
+    }
+    p{
+        padding:20px;
+    }
+@media (max-width:600px){
+    #sidebar{
+        display:none;
+    }
+}
 }
